@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FAVICON -->
+    <link href="img/web.png" rel="icon">
+    <!-- TITULO DEL SITIO -->
+    <title>Facu Cabaña Portfolio</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">FC</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO  -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Facu Cabaña</h1>
+            <h2>Técnico en Informática - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/" class="facebook" Target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/" class="twitter" Target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" class="linkedin" Target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" class="instagram" Target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Facu Cabaña. <br></span>Soy programador/diseñador web de la ciudad de San Nicolás de los
+                Arroyos, provincia de Buenos Aires, Argentina. <br> Naci un día Miércoles 27 de junio a las 8hs del año
+                1990. <br>
+                También trabajo como técnico instalador para Personal Flow.</p>
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            27/06/1990
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            3364626278
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            facucabs7@gmail.com
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Deportes</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Películas</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotos</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Autos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="CV.pdf" target="_blank"> Descargar CV </a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>79%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CV-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en Informática</h4>
+                        <span class="casa">EET Nº 7 José Hernandez - Avellaneda</span>
+                        <span class="fecha">2008 - 2009</span>
+                        <p>Secundario completo: “Técnico en Informática Personal y Profesional con Orientación en
+                            Procesos Productivos.” </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>“Idiomas: Inglés e italiano” </h4>
+                        <span class="casa">UTN Facultad Regional San Nicolás</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Inglés intermedio e italiano inicial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programador Web Inicial - Front End Developer
+                        </h4>
+                        <span class="casa">UTN.BA</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Web Project, JQUERY, Javascript, diseño UX/UI, Boots, Diseño Responsive, tecnologías NodeJs y
+                            MYSQL</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico instalador</h4>
+                        <span class="casa">Personal Flow</span>
+                        <span class="fecha">2015 - 2023</span>
+                        <p>Instalación y mantenimiento de servicios de cable e internet (Coaxil e FTTH)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Google</span>
+                        <span class="fecha">2010 - 2015</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Microsoft</span>
+                        <span class="fecha">2009 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO  -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>BLOGGER</h3>
+                        <p>Web autoadministrable</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>LAMPIX</h3>
+                        <p>Brochure</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>DISEÑO CREATIVO</h3>
+                        <p>Comunity manager</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>COFFEX</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>RESPONSIVE</h3>
+                        <p>E-commerce</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>JARDIN INFA</h3>
+                        <p>Diseño gráfico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Telefóno">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <dib class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Corrientes 159, BSAS
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                Contacto: 3364-1234567
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: facu@email.com.ar
+                            </li>
+
+                        </ul>
+                    </dib>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer  -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/" class="facebook" Target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" class="twitter" Target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" class="linkedin" Target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" class="instagram" Target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <p>Hecho por Facu Cabaña © 2023</p>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
